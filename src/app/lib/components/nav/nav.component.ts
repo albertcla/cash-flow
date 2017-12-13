@@ -3,11 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'cf-nav',
   template: `
-    <p>
-      nav works!
-    </p>
+    <nav>
+      <cf-title></cf-title>
+    </nav>
   `,
-  styles: []
+  styles: [
+    `
+    nav{
+      border-bottom: .1rem solid;
+    }
+    `
+  ]
 })
 export class NavComponent implements OnInit {
 
